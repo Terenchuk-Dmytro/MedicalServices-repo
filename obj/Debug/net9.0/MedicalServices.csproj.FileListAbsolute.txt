@@ -96,3 +96,4 @@ C:\Users\terem\source\repos\MedicalServices\MedicalServices\obj\Debug\net9.0\Med
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\obj\Debug\net9.0\ref\MedicalServices.dll
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\obj\Debug\net9.0\compressed\z6rd077tph-cidi93hdtl.gz
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\obj\Debug\net9.0\compressed\0d3rzlp417-upvavvbqhc.gz
+C:\Users\terem\source\repos\MedicalServices\MedicalServices\obj\Debug\net9.0\MedicalServices.sourcelink.json

@@ -1,5 +1,6 @@
 wwwroot\assets\family-doctor.jpg
 wwwroot\assets\logo.svg
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -62,10 +63,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
-C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\assets\logo.svg
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\favicon.ico
-C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\js\site.js
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -125,4 +123,6 @@ C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\lib\jquery\d
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\assets\logo.svg
 C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\css\site.css
+C:\Users\terem\source\repos\MedicalServices\MedicalServices\wwwroot\js\site.js
