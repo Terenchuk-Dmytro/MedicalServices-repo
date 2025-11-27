@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Medical Services";
+}
+
+<header class="primary-header" data-header>
+    <div class="logo">
+        <img src="~/assets/logo.svg" alt="Medical Services logo" width="48" height="48" />
+        <div>
+            <p class="logo__label">MedBook</p>
+            <p class="logo__tagline">online запис пацієнтів</p>
+        </div>
+    </div>
+    <nav id="main-nav" class="primary-nav" data-nav aria-label="Головна навігація">
+        <a href="#about">Про нас</a>
+        <a href="#booking">Запис</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+    <button class="nav-toggle" data-menu-toggle aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__label">Меню</span>
+    </button>
+</header>
+
+<main id="main-content">
+    <section class="hero">
+        <div class="hero__media">
+            <img src="~/assets/family-doctor.jpg" alt="Лікар проводить огляд дитини разом з батьками" loading="lazy" />
+            <ul class="metrics">
+                <li>
+                    <p class="metrics__value">24/7</p>
+                    <p class="metrics__label">онлайн-запис</p>
+                </li>
+                <li>
+                    <p class="metrics__value">5 хв</p>
+                    <p class="metrics__label">на підтвердження прийому</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="info-flow" aria-label="Основні блоки інтерфейсу">
+        <article class="flow-card">
+            <p class="flow-card__title">Про нас</p>
+            <p>MedBook — це цифровий довідник та система електронного запису, яка поєднує приватні кабінети та міські поліклініки. Команда адміністраторів забезпечує коректний графік, а лікарі отримують історію пацієнтів у реальному часі.</p>
+        </article>
+        <article class="flow-card">
+            <p class="flow-card__title">Послуги</p>
+            <ul>
+                <li>онлайн-реєстрація та вибір лікаря за спеціалізацією;</li>
+                <li>нагадування про прийом і підтвердження в 1 клік;</li>
+                <li>звітність для адміністратора та кабінету.</li>
+            </ul>
+        </article>
+        <article class="flow-card">
+            <p class="flow-card__title">Запис на прийом</p>
+            <p>Залиште заявку через адаптивну форму нижче — оператор підтвердить вільний час протягом 5 хвилин.</p>
+            <a class="btn primary" href="#booking">Залишити заявку</a>
+        </article>
+    </section>
+
+    <section id="booking" class="booking" aria-label="Онлайн запис на прийом">
+        <div class="booking__intro">
+            <h2>Онлайн-запис на прийом</h2>
+        </div>
+        <form class="booking__form">
+            <label>
+                <span>Ім’я та прізвище</span>
+                <input type="text" name="fullName" placeholder="Напр., Марія Іваненко" required />
+            </label>
+            <label>
+                <span>Номер телефону</span>
+                <input type="tel" name="phone" placeholder="+38 (0XX) XXX-XX-XX" required />
+            </label>
+            <label>
+                <span>Спеціалізація лікаря</span>
+                <select name="speciality" required>
+                    <option value="">Оберіть зі списку</option>
+                    <option value="pediatrics">Педіатрія</option>
+                    <option value="cardiology">Кардіологія</option>
+                    <option value="dermatology">Дерматологія</option>
+                    <option value="family">Сімейна медицина</option>
+                </select>
+            </label>
+            <label>
+                <span>Бажана дата</span>
+                <input type="date" name="date" required />
+            </label>
+            <label>
+                <span>Коментар</span>
+                <textarea name="comment" rows="3" placeholder="Симптоми, побажання до часу прийому"></textarea>
+            </label>
+            <button type="submit" class="btn primary">Надіслати запит</button>
+        </form>
+    </section>
+</main>
+
+<footer id="contacts" class="primary-footer">
+    <div>
+        <p class="logo__label">MedBook</p>
+        <p>м. Київ, вул. Київська, 67</p>
+    </div>
+    <div>
+        <p>Контактний центр: <a href="tel:+380665556767">+38 (066) 555-67-67</a></p>
+        <p>Email: <a href="mailto:medical.services@example.com">medical.services@example.com</a></p>
+    </div>
+    <div>
+        <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener">github.com</a></p>
+        <p>&copy; @DateTime.Now.Year MedBook</p>
+    </div>
+</footer>
