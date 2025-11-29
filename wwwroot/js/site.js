@@ -18,7 +18,7 @@
         });
     }
 
-    const revealItems = document.querySelectorAll('.card, .flow-card');
+    const revealItems = document.querySelectorAll('.flow-card');
     if (revealItems.length) {
         const observer = new IntersectionObserver(
             (entries) => {
