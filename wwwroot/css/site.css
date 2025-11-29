@@ -159,14 +159,6 @@ main {
   align-items: start;
 }
 
-.hero__content {
-  background: var(--surface);
-  padding: clamp(2rem, 5vw, 4rem);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  box-shadow: 0 2rem 4rem rgba(15, 23, 42, 0.05);
-}
-
 .hero__media {
   background: var(--surface);
   border-radius: var(--radius);
@@ -191,32 +183,6 @@ main {
   margin: 0 0 1.6rem;
 }
 
-.hero__content h1 {
-  font-size: clamp(3rem, 4vw, 4.8rem);
-  line-height: 1.2;
-  margin-top: 0.6rem;
-  margin-bottom: 1.6rem;
-}
-
-.hero__text {
-  margin: 0 0 2rem;
-  color: var(--muted);
-}
-
-.eyebrow {
-  font-size: 1.4rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--primary-dark);
-  margin: 0;
-}
-
-.hero__cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-}
-
 .btn {
   border-radius: 999px;
   padding: 0.8rem 2.4rem;
@@ -230,12 +196,6 @@ main {
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff;
   box-shadow: 0 1.5rem 3rem rgba(14, 124, 134, 0.35);
-}
-
-.btn.ghost {
-  border: 1px solid var(--border);
-  color: var(--text);
-  background: transparent;
 }
 
 .btn:hover,
@@ -277,51 +237,6 @@ main {
   }
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-  gap: 2rem;
-  margin-bottom: 5.6rem;
-}
-
-.card {
-  background: var(--surface);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  padding: 2.4rem;
-  box-shadow: 0 2rem 4rem rgba(15, 23, 42, 0.05);
-  opacity: 0;
-  transform: translateY(3rem);
-  transition: opacity 600ms ease, transform 600ms ease;
-}
-
-.card.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.card h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.card ul {
-  padding-left: 1.6rem;
-  color: var(--muted);
-}
-
-.card--patient {
-  border-top: 0.6rem solid #f8cdda;
-}
-
-.card--doctor {
-  border-top: 0.6rem solid #90f7ec;
-}
-
-.card--admin {
-  border-top: 0.6rem solid #c3cfe2;
-}
-
 .info-flow {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
@@ -348,64 +263,9 @@ main {
   margin: 0;
 }
 
-.flow-card--photo img {
-  width: 100%;
-  border-radius: calc(var(--radius) - 0.6rem);
-  object-fit: cover;
-  height: 20rem;
-}
-
 .flow-card ul {
   margin: 0;
   padding-left: 1.6rem;
-}
-
-.workflow {
-  margin-bottom: 5.6rem;
-}
-
-.workflow__steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1.6rem;
-}
-
-.step {
-  background: var(--surface);
-  border-radius: var(--radius);
-  padding: 2rem;
-  border: 1px dashed var(--border);
-  position: relative;
-}
-
-.step__number {
-  font-size: 4rem;
-  margin: 0;
-  color: rgba(14, 124, 134, 0.1);
-  font-weight: 700;
-}
-
-.schedule {
-  margin-bottom: 4rem;
-}
-
-.schedule__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  gap: 1.6rem;
-}
-
-.schedule__card {
-  padding: 2rem;
-  border-radius: var(--radius);
-  background: linear-gradient(145deg, #ffffff, #f0f4ff);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.06);
-}
-
-.schedule__title {
-  font-weight: 700;
-  margin: 0 0 0.8rem;
 }
 
 .booking {
