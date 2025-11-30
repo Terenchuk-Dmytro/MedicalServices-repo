@@ -29,7 +29,7 @@ MedicalServices/
 
 ### Запуск проєкту
 ```bash
-git clone https://github.com/<your-account>/MedicalServices.git
+git clone https://github.com/<your-account>/MedicalServices-repo.git
 cd MedicalServices
 dotnet restore                    # встановлює пакунки
 dotnet watch run --project MedicalServices/MedicalServices.csproj
