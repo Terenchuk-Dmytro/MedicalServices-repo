@@ -1,0 +1,119 @@
+@{
+    ViewData["Title"] = "Особистий кабінет";
+}
+
+<header class="primary-header" data-header>
+    <div class="logo">
+        <img src="~/assets/logo.svg" alt="Medical Services logo" width="48" height="48" />
+        <div>
+            <p class="logo__label">MedBook</p>
+            <p class="logo__tagline">online запис пацієнтів</p>
+        </div>
+    </div>
+    <nav id="main-nav" class="primary-nav" data-nav aria-label="Головна навігація">
+        <a href="@Url.Action("Index", "Home")">Головна</a>
+        <a href="@Url.Action("Index", "User")" class="nav-link--active">Мій профіль</a>
+        <a href="@Url.Action("Login", "Auth")" class="btn ghost">Вийти</a>
+    </nav>
+    <button class="nav-toggle" data-menu-toggle aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__label">Меню</span>
+    </button>
+</header>
+
+<main id="main-content">
+    <section class="user-dashboard">
+        <div class="dashboard-header">
+            <h1>Особистий кабінет</h1>
+            <p class="dashboard-subtitle">Користувач: <strong>Марія Іваненко</strong></p>
+        </div>
+        
+        <div class="dashboard-grid">
+            <div class="dashboard-card dashboard-card--profile">
+                <h2>Мій профіль</h2>
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <span>МІ</span>
+                    </div>
+                    <div class="profile-details">
+                        <p><strong>Марія Іваненко</strong></p>
+                        <p>maria.ivanenko@example.com</p>
+                        <p>+38 (066) 123-45-67</p>
+                    </div>
+                </div>
+                <button class="btn ghost btn--full">Редагувати профіль</button>
+            </div>
+            
+            <div class="dashboard-card">
+                <h2>Мої записи</h2>
+                <div class="appointments-list">
+                    <div class="appointment-item">
+                        <div class="appointment-date">
+                            <p class="date-day">15</p>
+                            <p class="date-month">Березня</p>
+                        </div>
+                        <div class="appointment-details">
+                            <p><strong>Педіатрія</strong></p>
+                            <p>Др. Олена Петренко</p>
+                            <p>10:00 - 10:30</p>
+                        </div>
+                        <div class="appointment-status appointment-status--confirmed">
+                            <span>Підтверджено</span>
+                        </div>
+                    </div>
+                    
+                    <div class="appointment-item">
+                        <div class="appointment-date">
+                            <p class="date-day">22</p>
+                            <p class="date-month">Березня</p>
+                        </div>
+                        <div class="appointment-details">
+                            <p><strong>Сімейна медицина</strong></p>
+                            <p>Др. Іван Коваленко</p>
+                            <p>14:00 - 14:30</p>
+                        </div>
+                        <div class="appointment-status appointment-status--pending">
+                            <span>Очікує підтвердження</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="@Url.Action("Index", "Home")#booking" class="btn primary btn--full">Записатися на прийом</a>
+            </div>
+            
+            <div class="dashboard-card">
+                <h2>Історія дій</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <p><strong>Запис на прийом</strong></p>
+                        <p>22 березня 2025, 14:00</p>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Підтверджено запис</strong></p>
+                        <p>15 березня 2025, 10:00</p>
+                    </div>
+                    <div class="activity-item">
+                        <p><strong>Оновлено профіль</strong></p>
+                        <p>10 березня 2025, 16:30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contacts" class="primary-footer">
+    <div>
+        <p class="logo__label">MedBook</p>
+        <p>м. Київ, вул. Київська, 67</p>
+    </div>
+    <div>
+        <p>Контактний центр: <a href="tel:+380665556767">+38 (066) 555-67-67</a></p>
+        <p>Email: <a href="mailto:medical.services@example.com">medical.services@example.com</a></p>
+    </div>
+    <div>
+        <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener">github.com</a></p>
+        <p>&copy; @DateTime.Now.Year MedBook</p>
+    </div>
+</footer>
+

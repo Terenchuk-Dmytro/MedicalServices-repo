@@ -1,0 +1,80 @@
+@{
+    ViewData["Title"] = "Вхід до системи";
+}
+
+<header class="primary-header" data-header>
+    <div class="logo">
+        <img src="~/assets/logo.svg" alt="Medical Services logo" width="48" height="48" />
+        <div>
+            <p class="logo__label">MedBook</p>
+            <p class="logo__tagline">online запис пацієнтів</p>
+        </div>
+    </div>
+    <nav id="main-nav" class="primary-nav" data-nav aria-label="Головна навігація">
+        <a href="@Url.Action("Index", "Home")">Головна</a>
+    </nav>
+    <button class="nav-toggle" data-menu-toggle aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__label">Меню</span>
+    </button>
+</header>
+
+<main id="main-content">
+    <section class="auth-section">
+        <div class="auth-card">
+            <h1>Вхід до системи</h1>
+            <p class="auth-subtitle">Увійдіть до свого облікового запису</p>
+            
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email або логін</label>
+                    <input type="text" id="email" name="email" placeholder="example@email.com" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="Введіть пароль" required />
+                </div>
+                
+                <div class="form-group form-group--checkbox">
+                    <label>
+                        <input type="checkbox" name="remember" />
+                        <span>Запам'ятати мене</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn primary btn--full">Увійти</button>
+                
+                <div class="auth-message auth-message--error" style="display: none;">
+                    <p>Невірний email або пароль. Спробуйте ще раз.</p>
+                </div>
+                
+                <div class="auth-message auth-message--success" style="display: none;">
+                    <p>Вхід успішний! Перенаправлення...</p>
+                </div>
+            </form>
+            
+            <div class="auth-links">
+                <a href="#">Забули пароль?</a>
+                <a href="#">Реєстрація</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contacts" class="primary-footer">
+    <div>
+        <p class="logo__label">MedBook</p>
+        <p>м. Київ, вул. Київська, 67</p>
+    </div>
+    <div>
+        <p>Контактний центр: <a href="tel:+380665556767">+38 (066) 555-67-67</a></p>
+        <p>Email: <a href="mailto:medical.services@example.com">medical.services@example.com</a></p>
+    </div>
+    <div>
+        <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener">github.com</a></p>
+        <p>&copy; @DateTime.Now.Year MedBook</p>
+    </div>
+</footer>
+

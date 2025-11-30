@@ -1,0 +1,167 @@
+@{
+    ViewData["Title"] = "Панель адміністратора";
+}
+
+<header class="primary-header" data-header>
+    <div class="logo">
+        <img src="~/assets/logo.svg" alt="Medical Services logo" width="48" height="48" />
+        <div>
+            <p class="logo__label">MedBook</p>
+            <p class="logo__tagline">online запис пацієнтів</p>
+        </div>
+    </div>
+    <nav id="main-nav" class="primary-nav" data-nav aria-label="Головна навігація">
+        <a href="@Url.Action("Index", "Home")">Головна</a>
+        <a href="@Url.Action("Index", "Admin")" class="nav-link--active">Панель адміністратора</a>
+        <a href="@Url.Action("Login", "Auth")" class="btn ghost">Вийти</a>
+    </nav>
+    <button class="nav-toggle" data-menu-toggle aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__label">Меню</span>
+    </button>
+</header>
+
+<main id="main-content">
+    <section class="admin-dashboard">
+        <div class="dashboard-header">
+            <h1>Панель адміністратора</h1>
+            <p class="dashboard-subtitle">Керування системою запису пацієнтів</p>
+        </div>
+        
+        <div class="admin-stats">
+            <div class="stat-card">
+                <p class="stat-value">127</p>
+                <p class="stat-label">Активних записів</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-value">45</p>
+                <p class="stat-label">Лікарів</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-value">892</p>
+                <p class="stat-label">Пацієнтів</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-value">23</p>
+                <p class="stat-label">Очікують підтвердження</p>
+            </div>
+        </div>
+        
+        <div class="admin-grid">
+            <div class="admin-card">
+                <h2>Керування записами</h2>
+                <div class="admin-actions">
+                    <button class="btn primary">Додати запис</button>
+                    <button class="btn ghost">Переглянути всі</button>
+                    <button class="btn ghost">Експорт даних</button>
+                </div>
+                <div class="recent-items">
+                    <h3>Останні записи</h3>
+                    <div class="item-row">
+                        <span>Марія Іваненко</span>
+                        <span>15.03.2025, 10:00</span>
+                        <span class="badge badge--confirmed">Підтверджено</span>
+                    </div>
+                    <div class="item-row">
+                        <span>Олександр Коваль</span>
+                        <span>22.03.2025, 14:00</span>
+                        <span class="badge badge--pending">Очікує</span>
+                    </div>
+                    <div class="item-row">
+                        <span>Анна Мельник</span>
+                        <span>18.03.2025, 11:30</span>
+                        <span class="badge badge--confirmed">Підтверджено</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-card">
+                <h2>Керування лікарями</h2>
+                <div class="admin-actions">
+                    <button class="btn primary">Додати лікаря</button>
+                    <button class="btn ghost">Редагувати графіки</button>
+                    <button class="btn ghost">Переглянути всіх</button>
+                </div>
+                <div class="recent-items">
+                    <h3>Активні лікарі</h3>
+                    <div class="item-row">
+                        <span>Др. Олена Петренко</span>
+                        <span>Педіатрія</span>
+                        <span class="badge badge--active">Активний</span>
+                    </div>
+                    <div class="item-row">
+                        <span>Др. Іван Коваленко</span>
+                        <span>Сімейна медицина</span>
+                        <span class="badge badge--active">Активний</span>
+                    </div>
+                    <div class="item-row">
+                        <span>Др. Марія Сидоренко</span>
+                        <span>Кардіологія</span>
+                        <span class="badge badge--active">Активний</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-card">
+                <h2>Керування пацієнтами</h2>
+                <div class="admin-actions">
+                    <button class="btn primary">Додати пацієнта</button>
+                    <button class="btn ghost">Пошук</button>
+                    <button class="btn ghost">Експорт</button>
+                </div>
+                <div class="recent-items">
+                    <h3>Останні реєстрації</h3>
+                    <div class="item-row">
+                        <span>Марія Іваненко</span>
+                        <span>10.03.2025</span>
+                        <span class="badge badge--new">Новий</span>
+                    </div>
+                    <div class="item-row">
+                        <span>Олександр Коваль</span>
+                        <span>08.03.2025</span>
+                        <span class="badge badge--active">Активний</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-card">
+                <h2>Звіти та аналітика</h2>
+                <div class="admin-actions">
+                    <button class="btn primary">Створити звіт</button>
+                    <button class="btn ghost">Статистика</button>
+                    <button class="btn ghost">Графіки</button>
+                </div>
+                <div class="recent-items">
+                    <h3>Доступні звіти</h3>
+                    <div class="item-row">
+                        <span>Звіт за березень 2025</span>
+                        <span>15.03.2025</span>
+                        <a href="#" class="link">Завантажити</a>
+                    </div>
+                    <div class="item-row">
+                        <span>Статистика записів</span>
+                        <span>10.03.2025</span>
+                        <a href="#" class="link">Переглянути</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contacts" class="primary-footer">
+    <div>
+        <p class="logo__label">MedBook</p>
+        <p>м. Київ, вул. Київська, 67</p>
+    </div>
+    <div>
+        <p>Контактний центр: <a href="tel:+380665556767">+38 (066) 555-67-67</a></p>
+        <p>Email: <a href="mailto:medical.services@example.com">medical.services@example.com</a></p>
+    </div>
+    <div>
+        <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener">github.com</a></p>
+        <p>&copy; @DateTime.Now.Year MedBook</p>
+    </div>
+</footer>
+
